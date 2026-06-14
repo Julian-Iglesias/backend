@@ -123,6 +123,7 @@ try{
 //Callbacks
 /* funcion que se pasa como argumento a otra funcion para ejectuarse cuando una tarea termina */
 
+
 //Promesas
 /* Representa el resultado de una poperacion que puede completarse en el futuro (pending, fulfille o rejected) (objeto asincrono)*/
 /* const miPrimerPromesa =(type)=> {
@@ -145,7 +146,7 @@ console.log(miPrimerPromesa(false)
 //.finally(()=>{}) //se ejecuta siempre al final
 )  */
 
-const miPrimerPromesa = (type, ms) => {
+const miPrimerPromesa = (type, ms = 3000) => { // seteo un valor por defecto
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (type) {
@@ -156,7 +157,7 @@ const miPrimerPromesa = (type, ms) => {
         }, ms)
     })
 }
-miPrimerPromesa(true, 3000)
+miPrimerPromesa(true) // como ya cree el valor por defecto del ms = 3000, no hace falta ponerlo aca
 .then((data)=>{
     console.log(data)
 })
@@ -164,5 +165,16 @@ miPrimerPromesa(true, 3000)
     console.log(error)
 })
 
+
 //Async/Await
 /* Pemite escribir codigo asincrono como si fuera sincrono (forma moderna de trabajar con promesas) */
+
+
+// Rest Operator: junta todos los parametros
+//sintaxis: ...(tres puntos), va despues de un objeto o un array
+const sumarParametros =(...data) => {
+    data.reduce()
+}
+sumarParametros(1,23,3)
+sumarParametros(1,23,3,312,123,45,4)
+sumarParametros(1,23,3,5,31,76,4357,236,7)
