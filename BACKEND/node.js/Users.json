@@ -1,0 +1,9 @@
+{
+  "_id": ObjectId("..."),
+  "nombre": "Juan",
+  "edad": 25,
+  "ciudad": "Buenos Aires",
+  "biografia": "Amante de la tecnología",
+  "seguidores": 1200,
+  "saldo_creditos": 3000
+}
