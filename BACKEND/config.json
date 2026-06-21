@@ -1,0 +1,30 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "edad": 25,
+      "email": "ana@example.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Carlos",
+      "edad": 32,
+      "email": "carlos@example.com"
+    }
+  ],
+  "productos": [
+    {
+      "id": "A101",
+      "nombre": "Teclado mecánico",
+      "precio": 59.99,
+      "stock": true
+    },
+    {
+      "id": "B202",
+      "nombre": "Mouse gamer",
+      "precio": 29.50,
+      "stock": false
+    }
+  ]
+}
